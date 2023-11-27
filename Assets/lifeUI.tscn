@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://reqfdtpe16nh"]
+
+[ext_resource type="Texture2D" uid="uid://mxcygbau7as4" path="res://Assets/heart.png" id="1_jdu0y"]
+[ext_resource type="Script" path="res://Scripts/lifeSystem.gd" id="1_vtfj1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Life" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_vtfj1")
+
+[node name="Hearts" type="TextureRect" parent="UI/Life"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_jdu0y")
+expand_mode = 2
+stretch_mode = 1
